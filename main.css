@@ -1,0 +1,297 @@
+body {
+  background:#e9e9e9;
+  overflow-x:hidden;
+}
+
+hr {
+  margin:25px;
+}
+
+
+.container-width {
+  width:97%;
+}
+
+@media (min-width:768px) {
+  .container-width {
+    width:70%;
+  }
+}
+
+
+.bigger-text {
+  font-size:1.6rem;
+}
+
+
+
+/* cabecera */ 
+.background {
+  background:url('https://images.pexels.com/photos/959816/pexels-photo-959816.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  background-repeat:no-repeat;
+  background-size:cover;
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:-1;
+  height:100vh;
+  width:100%;
+  filter:blur(2px);
+}
+
+.jumbotron {
+  background:none;
+  height:100vh;
+  margin-bottom:0px;
+}
+
+.jumbotron > .container {
+  position: relative;
+  top:50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color:white;
+}
+
+.btn-more {
+  color:white;
+  border-color:white;
+}
+
+.btn-more:hover {
+  border-color:grey;
+  color:white;
+  background-color:grey;
+}
+
+
+.btn-sign {
+  background-color:white;
+  border-color:white;
+}
+
+.btn-sign:hover {
+  background-color:grey;
+  border-color:grey;
+  color:white;
+}
+
+
+/* navbar */
+
+#navbarNav {
+position:absolute;
+  min-height:100vh;
+  margin-left:-15rem;
+  margin-top:-60px;
+  -webkit-transition:margin .25s ease-out;
+  -moz-transition:margin .25s ease-out;
+  -o-transition:margin .25s ease-out;
+  transition:margin .25s ease-out;
+  text-align:center;
+}
+
+.navbar-nav {
+  width:15rem;
+  background:whitesmoke;
+}
+
+
+#navbarNav.toggled {
+  margin-left:0;
+}
+
+#menu-toggler {
+  margin-left:1rem;
+  margin-top:1rem;
+}
+
+#menu-toggler.toggled {
+  margin-left:16rem;
+}
+
+/* seccion */
+
+.seccion {
+  background:white;
+  margin-top:10px;
+  border-radius:0 0 20px 20px;
+  border-bottom:2px solid #dbdbdb;
+  padding:0px;
+  padding-top:60px;
+}
+
+.seccion img {
+  width:100%;
+  border-radius:0 0 10px 10px;
+  margin-top:30px;
+}
+
+/* grid */
+
+.grid {
+  margin-top:10px;
+  background:white;
+  border-bottom:2px solid #dbdbdb;
+  border-radius:0 0 10px 10px;
+}
+
+.grid-item {
+  padding-top:35px;
+}
+
+.grid-icon {
+  width:100px;
+  height:100px;
+  margin-left:auto;
+  margin-right:auto;
+  background:lightgrey;
+  margin-bottom:10px;
+}
+
+.grid-icon > img {
+  width:50%;
+  height:50%;
+  top:25%;
+  margin-left:0 auto;
+  position:relative;
+}
+
+@media (min-width:992px) {
+  .grid-item>hr {
+    display:none;
+  }
+
+  .bbottom {
+    border-bottom:1px solid #e9e9e9;
+  }
+
+  .bleft {
+    border-left:1px solid #e9e9e9;
+  }
+
+  .bright {
+    border-right:1px solid #e9e9e9;
+  }
+
+  .btop {
+    border-top:1px solid #e9e9e9;
+  }
+
+
+}
+
+/* blog */
+
+.blogs-container {
+  padding:0px;
+}
+
+.blog {
+  margin-top:10px;
+  padding:10px;
+  /*background-color: white;*/
+  border-radius:10px 10px 0px 0px;
+  
+}
+
+.blog > img {
+  border-radius:10px 10px 0px 0px;
+  width:100%;
+}
+
+.blog-text {
+  padding:35px;
+  background-color:white;
+  border-radius:0px 0px 10px 10px;
+  border-bottom:2px solid #dbdbdb; 
+
+}
+
+@media (min-width:768px) {
+
+
+
+  .blogs-container > .row {
+    padding-left:5px;
+    padding-right:5px;
+
+}
+
+
+
+}
+
+.blog-text > .btn {
+  
+  border-color:lightgrey;
+}
+
+/* contacto */
+
+.contact {
+  margin-top:16px;
+  padding:70px;
+  padding-left:50px;
+  padding-right:50px;
+  background-color:#ff9696;
+  color:white;
+}
+
+input {
+  height:40px;
+  border-radius:5px;
+  border:none; 
+  line-height:40px;
+  margin-top:10px;i
+}
+
+.email {
+  background:#ffb4b4;
+  padding-left:12px;
+  color:white;
+  border:2px solid transparent;
+  border-radius:5px 0px 0px 5px;
+}
+
+input.email:active, input.email:focus {
+  border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.submit {
+  width:100%;
+  max-width:100%;
+  color:#ff9696;
+  padding-left:20px;
+  padding-right:20px;
+  border-radius:0px 5px 5px 0px;
+}
+
+.submit:hover {
+  cursor:pointer;
+}
+
+/* footer */
+
+footer {
+  padding-top:50px;
+}
+
+.social-icon {
+  width:35px;
+  opacity:0.3;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.social-icon:hover {
+  opacity:0.6;
+}
+
+.footer-rights {
+  padding:35px;
+  color:grey;
+}
+
+
